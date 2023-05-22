@@ -22,8 +22,6 @@ public abstract class BasePage {
 
     }
 
-    public abstract <T extends BasePage> T open();
-
     public  void scrollToElement(Point point){
         ((JavascriptExecutor)driver).executeScript("window.scrollTo" + point.toString());
     }
