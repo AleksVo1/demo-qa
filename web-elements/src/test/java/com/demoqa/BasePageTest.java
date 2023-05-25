@@ -19,7 +19,6 @@ public abstract class BasePageTest {
     }
     @AfterEach
     public void tearDown(){
-        driver.close();
         driver.quit();
     }
 }
